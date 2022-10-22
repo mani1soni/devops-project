@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-                sh "sudo docker -itd -p 80:80 web-server"
+                sh "sudo docker run -itd -p 80:80 web-server"
             }
         }
     }
